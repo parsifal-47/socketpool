@@ -1,0 +1,16 @@
+%% -*- mode: erlang -*-
+{application, tcp_echo,
+ [
+  {description, "Echo protocol example for socket pools"},
+  {vsn, "1.0.0"},
+  {registered, [tcp_echo_sup]},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  lager,
+                  socketpool
+                 ]},
+  {modules, []},
+  {mod, {tcp_echo, []}},
+  {env, []}
+ ]}.

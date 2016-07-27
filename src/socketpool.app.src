@@ -1,0 +1,12 @@
+%% -*- mode: erlang -*-
+{application, socketpool,
+ [
+  {description, "Socket pools for fast reads"},
+  {vsn, "1.0.0"},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  lager
+                 ]},
+  {env, []}
+ ]}.
